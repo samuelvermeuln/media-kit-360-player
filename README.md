@@ -1,8 +1,15 @@
+# Presentation Media Kit
+Introducing two essential components to enhance visual experiences in your web applications:
 
+**SpinImages360 Component:** Create interactive 360-degree image galleries with drag or autoplay functionality. Customize behavior and appearance while supporting event notifications for seamless integration.
+
+**RenderVideo Component:** Empower your applications with video rendering and playback control. Features include autoplay, loop, mute, and customizable controls. Specify source and fallback URLs for consistent video delivery.
+
+With these components, you can create engaging and dynamic visual experiences that elevate the standard of your web applications.
 
 ## SpinImages360 Component Documentation
 
-[Example]()
+![Example](https://github.com/samuelvermeuln/media-kit-360-player/assets/70477826/b87f21a2-7db3-45c0-9bdb-e923438340b6)
 
 | Parameter | Type | Description |  
 | :---------------------- | :---------- | :------------------------------------------------- |  
@@ -23,12 +30,26 @@
 ### Example Usage:
 ```javascript  
 <SpinImages360  
- imagesBaseUrl={[ 'https://example.com/image1.jpg', 'https://example.com/image2.jpg', 'https://example.com/image3.jpg' ]} autoplay={true} width={600} height={400} showRotationIconOnStartup={true} imageInitialIndex={1} shouldNotifyEvents={true} notifyOnPointerDown={(x, y) => console.log('Pointer down at:', x, y)} notifyOnPointerUp={(x, y) => console.log('Pointer up at:', x, y)} notifyOnPointerMoved={(x, y) => console.log('Pointer moved to:', x, y)}/>  
+ imagesBaseUrl={[ 
+     'https://example.com/image1.jpg', 
+     'https://example.com/image2.jpg', 
+     'https://example.com/image3.jpg' 
+ ]} 
+ autoplay={true} 
+ width={600} 
+ height={400} 
+ showRotationIconOnStartup={true} 
+ imageInitialIndex={1} 
+ shouldNotifyEvents={true} 
+ notifyOnPointerDown={(x, y) => console.log('Pointer down at:', x, y)} 
+ notifyOnPointerUp={(x, y) => console.log('Pointer up at:', x, y)} 
+ notifyOnPointerMoved={(x, y) => console.log('Pointer moved to:', x, y)}
+/>  
 ```  
 
 ## RenderVideo Component Documentation
 
-[Example]()
+[Example](https://github.com/samuelvermeuln/media-kit-360-player/assets/70477826/e30badd0-2d47-47a3-a143-b69be4423335)
 
 | Parameter               | Type        | Description                                      |  
 | :---------------------- | :---------- | :----------------------------------------------- |  
@@ -57,31 +78,32 @@
 
 ```javascript  
 <RenderVideo  
- src="https://example.com/video.mp4" autoplay={true} loop={true} muted={false} width={500} height={300} showControls={true} showRetryButton={true} showVolumeControl={true} showProgressBar={true} showPlayPauseButton={true} showLoadingOverlay={true} RetryButtonComponent={CustomRetryButton} srcFallback="https://example.com/fallback-video.mp4" LoadingOverlayComponent={CustomLoadingOverlay} LoadingErrorOverlayComponent={CustomErrorOverlay} TextLoadingOverlayComponent={CustomTextLoadingOverlay} playPauseButtonComponent={CustomPlayPauseButton} progressBarColor="#ff0000" volumeControlColor="#00ff00"/>  
+ src="https://example.com/video.mp4"
+ srcFallback="https://example.com/fallback-video.mp4"
+ autoplay={true} 
+ loop={true} 
+ muted={false} 
+ width={500} 
+ height={300} 
+ showControls={true} 
+ showRetryButton={true} 
+ showVolumeControl={true} 
+ showProgressBar={true} 
+ showPlayPauseButton={true} 
+ showLoadingOverlay={true} 
+ RetryButtonComponent={CustomRetryButton}
+ LoadingOverlayComponent={CustomLoadingOverlay} 
+ LoadingErrorOverlayComponent={CustomErrorOverlay} 
+ TextLoadingOverlayComponent={CustomTextLoadingOverlay} 
+ playPauseButtonComponent={CustomPlayPauseButton}
+ progressBarColor="#ff0000" 
+ volumeControlColor="#00ff00"
+/>  
 ```  
 
-## Running Locally
-
-Clone the project
+## Running
 
 ```bash  
- git clone [Link](https://github.com/samuelvermeuln/media-kit-360-player)
+ npm i media-kit-360-player
 ```  
-
-Navigate to the project directory
-
-```bash  
- cd my-project  
-```  
-
-Install dependencies
-
-```bash  
- npm install  
-```  
-
-Start the server
-
-```bash  
- npm run start  
-```
+follow the examples

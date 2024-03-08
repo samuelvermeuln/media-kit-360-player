@@ -5,11 +5,16 @@ const VideoContainer = styled.div`
     position: relative;
     width: ${({width}) => width};
     height: ${({height}) => height};
+    padding-top: 56.25%; /* Aspect ratio (16:9) for responsive video */
 `;
 
 const Video = styled.video`
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    cursor: pointer;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire container */
 `;
 
 const Controls = styled.div`

@@ -17,7 +17,6 @@ const AnimationImage = ({ src, isVisible, width, height }) => {
             width={width}
             height={height}
             style={{ display: display }}
-            loading="lazy"
         />
     );
 };
