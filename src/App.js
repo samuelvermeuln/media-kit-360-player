@@ -23,9 +23,9 @@ function App() {
     <div className="App" style={{display:'flex'}}>
       <SpinImages360 imagesBaseUrl={images}/>
 
-      <div style={{width: '600px', height:'200px'}}>
+      {/* <div style={{width: '600px', height:'200px'}}>
         <RenderVideo src={src} srcFallback={srcFallback}/>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -1,6 +1,6 @@
 {
   "name": "media-kit-360-player",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "private": false,
   "description": "Enhance your web applications with the SpinImages360 and RenderVideo components. Create interactive 360-degree image galleries and control video playback with ease. Customize behavior and appearance for seamless integration into your projects.",
   "main": "./dist/index.js",
@@ -10,9 +10,16 @@
     "build:watch": "tsup src/Component/index.js --format esm,cjs --external react --minify --sourcemap --clean --watch",
     "dev": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "start": "react-scripts start",
+    "start1": "react-scripts start",
+    "start":"storybook dev -p 6006",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "buildCommand": "npm run build-storybook",
+    "devCommand": "npm run storybook",
+    "installCommand": "npm install",
+    "framework": null,
+    "outputDirectory": "./storybook-static"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

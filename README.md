@@ -1,7 +1,7 @@
 # Presentation Media Kit
 Introducing two essential components to enhance visual experiences in your web applications:
 
-**SpinImages360 Component:** Create interactive 360-degree image galleries with drag or autoplay functionality. Customize behavior and appearance while supporting event notifications for seamless integration.
+**SpinImages360 Component:** Create interactive 360-degree image galleries with drag or autoplay functionality. Customize behavior and appearance while supporting event notifications for seamless integration. Additionally, the component offers zoom functionality in the form of a magnifying glass and optimized treatment for mobile devices, ensuring a smooth user experience across various platforms.
 
 **RenderVideo Component:** Empower your applications with video rendering and playback control. Features include autoplay, loop, mute, and customizable controls. Specify source and fallback URLs for consistent video delivery.
 
