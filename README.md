@@ -9,7 +9,8 @@ With these components, you can create engaging and dynamic visual experiences th
 
 ## SpinImages360 Component Documentation
 
-![Example](https://github.com/samuelvermeuln/media-kit-360-player/assets/70477826/b87f21a2-7db3-45c0-9bdb-e923438340b6)
+![Example](https://github.com/samuelvermeuln/media-kit-360-player/assets/70477826/c3ae8413-7eef-4707-8070-f50590c44db9)
+
 
 | Parameter | Type | Description |  
 | :---------------------- | :---------- | :------------------------------------------------- |  
