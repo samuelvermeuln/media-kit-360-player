@@ -23,6 +23,8 @@ const SpinImages360 = ({
   notifyOnPointerDown,
   notifyOnPointerUp,
   notifyOnPointerMoved,
+  divProps = {},
+  imageProps = {},
 }) => {
   const elementRef = useRef(null);
   const [isScrolling, setIsScrolling] = useState(false);
@@ -159,6 +161,7 @@ const SpinImages360 = ({
       onMouseLeave={() => {
         if (!useAutoplay && autoplay) setUseAutoplay(true);
       }}
+      {...divProps}
     >
       {imagesBaseUrl?.map((value, index) => (
         <AnimationImage
@@ -167,6 +170,7 @@ const SpinImages360 = ({
           height={height}
           isVisible={index === selectedImageIndex}
           key={index}
+          {...imageProps}
         />
       ))}
     </StyledDiv>

@@ -34,11 +34,11 @@ const ModalContainer = styled.div`
 const Image = styled.img`
   max-width: 80%;
   max-height: 80%;
-  transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
+  transition: transform 0.3s ease; 
   transform-origin: ${({ zoomOrigin }) =>
-    zoomOrigin}; /* Set transform origin for zoom effect */
+    zoomOrigin}; 
   transform: ${({ zoom }) =>
-    zoom ? "scale(1.5)" : "scale(1)"}; /* Apply zoom effect */
+    zoom ? "scale(1.5)" : "scale(1)"};
   -moz-transform: ${({ zoom }) => (zoom ? "scale(1.5)" : "scale(1)")};
   -webkit-transform: ${({ zoom }) => (zoom ? "scale(1.5)" : "scale(1)")};
 `;
